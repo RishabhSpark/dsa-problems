@@ -3,7 +3,11 @@ class Solution{
 	vector<int>AllPrimeFactors(int N) {
 	    // Code here
 	    vector<int> ans;
-	    for(int i=2; i*i<=N; i++){
+	    while(N%2==0){
+	        ans.push_back(2);
+	        N/=2;
+	    }
+	    for(int i=3; i*i<=N; i+=2){
 	        while(N%i==0){
 	            ans.push_back(i);
 	            N=N/i;

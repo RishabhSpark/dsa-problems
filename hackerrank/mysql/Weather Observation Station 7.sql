@@ -1,0 +1,6 @@
+SELECT DISTINCT(CITY) FROM STATION
+WHERE RIGHT(CITY, 1) = 'a' OR
+      RIGHT(CITY, 1) = 'e' OR
+      RIGHT(CITY, 1) = 'i' OR
+      RIGHT(CITY, 1) = 'o' OR
+      RIGHT(CITY, 1) = 'u'
